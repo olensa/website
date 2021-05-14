@@ -1,0 +1,20 @@
+ <body>
+  <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/green_v.css') }}"></strong>
+
+    <header>
+      <div class="container">
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('visitka') }}">Home</a></li>
+            <li><a href="{{ url_for('spock') }}">Game</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact Me</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    
+    {% block content %}
+    {% endblock %}
+    
+ </body>
+</html>

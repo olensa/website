@@ -1,0 +1,85 @@
+  header h1.logo {
+    margin: 0;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    float: left;
+  }
+   
+  header h1.logo:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+   
+  /*
+   * Center the body content
+   */
+  div.jumbo {
+    padding: 10px 0 30px 0;
+    background-color: #eeeeee;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+  }
+   
+  
+
+  
+  form label {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+  }
+
+  form input#name,
+  form input#email,
+  form input#subject {
+    width: 400px;
+    background-color: rgb(121,207,181);
+    border: 1px solid rgb(52, 172, 136);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    padding: 5px;
+    font-size: 1.1em;
+    outline: none;
+  }
+   
+  form textarea#message {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(121,207,181);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid rgb(52, 172, 136);
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.1em;
+    outline: none;
+  }
+   
+  form input#submit {
+    display: block;
+
+    border:1px solid rgb(52, 172, 136);
+    padding: 10px; 
+    font-weight:bold; 
+    text-align: center; 
+    color: #000000; 
+    background-color: rgb(121,207,181);
+   }
+   
+  form input#submit:hover{
+    cursor: pointer;
+    border:1px solid rgb(121,207,181); 
+    background-color: rgb(52, 172, 136);
+}
+  /* Message flashing */
+  .flash {
+    background-color: #FBB0B0;
+    padding: 10px;
+    width: 400px;
+  }
+  

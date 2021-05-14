@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" UTF-8">
+        <meta name = "description" content="Olena's site">
+        <title>Olena's Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/green_v.css') }}">
+    </head>
+    <body class = "visitka">
+        {% extends "template.html" %}
+        {% block content %}
+        <div class = "Card" id="thumbnail">
+            <div class="cardContent">
+                <div class="cardText">
+                    <h1 class = "name">Olena Hlotova</h1>
+                    <hr class="visitka">
+                    <h2>+1 (647) 863-4863</h2>
+                    <h2  class = "email">email: lenaglotova21@gmail.com</h2>
+                </div>
+                <div class = 'container'>
+                    <a href="https://github.com/olensa">
+                        <img class = "link" src = "{{ url_for('static', filename='img/github.png') }}" alt="github link"/>
+                    </a>
+                    <a href ='https://www.linkedin.com/in/olenahlotova21'>
+                        <img class = 'link' src = "{{ url_for('static',     filename='img/linkedin.png') }}" alt="linkedin link"/>
+                    </a>
+                    <a href ='https://instagram.com/olensa374'>
+                        <img class = 'link' src = "{{ url_for('static',     filename='img/instagram.png') }}" alt="instagram link"/>
+                    </a>
+                    <a href ='https://www.facebook.com/lena.glotova.5'>
+                        <img class = 'link' src = "{{ url_for('static',     filename='img/facebook.png') }}" alt="facebook link"/>
+                    </a>
+                    <a href ='https://codepen.io/olensa'>
+                        <img class = 'link' src = "{{ url_for('static',     filename='img/codepen.png') }}" alt="codepen link"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = 'cat'>
+            <img src = "{{ url_for('static',     filename='img/cat_green.png') }}" alt = 'green cat'/>
+        </div>
+        {% endblock %}
+
+    </body>
+</html>

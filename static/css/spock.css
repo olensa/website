@@ -1,0 +1,71 @@
+body.spock {
+    background-color: #002244;
+}
+h1.spock {
+    color: white;
+    text-shadow: 1.5px 1.5px 4px black;
+    padding-bottom: 0%;
+    margin-block-end: 0%;
+
+}
+#choose {
+    color: white;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px 4px black;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+    margin-top: -1% ;
+
+}
+hr.spock {
+    margin-top: -30px;
+    background-color: white;
+    height: 2px;
+    border:black;
+}
+input {
+    width: 110px;
+    height: 110px;
+}
+input:hover {
+    width: 122px;
+    height: 122px;
+}
+input:focus{
+    outline: none;
+}
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(125px, 1fr));
+    grid-column-gap: 25px;
+    grid-template-rows: minmax(140px, 1fr);
+    text-align: center;
+    padding-left: 10%;
+    margin-block-end: 0%;
+}
+#text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 20% 0.1fr;
+    grid-row-gap: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: -2%;
+
+}
+div#text p.spock {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+p.spock img {
+    height: 150px;
+    width: 150px;
+}
+
+
+

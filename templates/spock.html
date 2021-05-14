@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="{{url_for('static', filename='js/spock.js')}}"></script>
+        <!--<script src="spock.js"></script>-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/spock.css') }}">
+
+        <meta charset ="UTF-8">
+        <meta name="description" content="Rock paper scissors lizard spock Game">
+        <title>Game</title>
+    </head>
+    <body class="spock">
+        {% extends "template.html" %}
+        {% block content %}
+
+        <h1 class="spock">Rock Paper Scissors Lizard Spock</h1> 
+        <br/>
+        <p id='choose'>Choose wisely</p>
+        <hr class="spock">
+        <div class ='icons'>
+        <input type="image" src="{{ url_for('static', filename='img/stones.png') }}" id='click rock' onclick="rspls('Rock')" alt="rock"/>
+        <input type="image" src="{{ url_for('static', filename='img/old-paper.png') }}" id='click paper' onclick="rspls('Paper')" alt="paper"/>
+        <input type="image" src="{{ url_for('static', filename='img/scissors.png') }}" id='click scissors' onclick="rspls('Scissors')" alt="scissors"/>
+        <input type="image" src="{{ url_for('static', filename='img/lizard.png') }}"id='click lizard' onclick="rspls('Lizard')" alt="lizard"/>
+        <input type="image" src="{{ url_for('static', filename='img/spock.png') }}" id='click spock' onclick="rspls('Spock')" alt="spock"/>
+        </div>
+        <div id='text'>
+        <p class="spock" id='user_choice'> </p>
+        <p class="spock" > </p>
+        <p class="spock" id='comp_choice'> </p>
+        <p class="spock" id='player_choice'> </p>
+        <p class="spock" id='winner'> </p>
+        <p class="spock" id='computer_choice'> </p>
+        <p class="spock" > </p>
+        <p class="spock" id='result'></p> </p>
+        <p class="spock" > </p>
+        </div>
+        {% endblock %}
+
+    </body>
+</html>      
