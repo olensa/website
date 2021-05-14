@@ -1,0 +1,7 @@
+Flask
+Flask-Ext
+Flask-Mail
+Flask-WTF
+gunicorn
+WTForms
+email-validator
