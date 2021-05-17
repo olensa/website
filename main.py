@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, flash
 from forms import ContactForm
 from flask_mail import Mail, Message
 import emails
+import sqlite3 as sql
+DATABASE = 'projects.db'
 
 
 mail = Mail() 
@@ -43,7 +45,17 @@ def contact():
             return render_template('contact.html', success=True)  
     elif request.method == 'GET':
         return render_template('contact.html', form=form)
- 
+
+@app.route('/list')
+def list():
+   con = sql.connect("projects.db")
+   con.row_factory = sql.Row
+   
+   cur = con.cursor()
+   cur.execute("select * from links")
+   
+   rows = cur.fetchall(); 
+   return render_template("my_projects.html",rows = rows)
 
 if __name__== '__main__':
     app.run(debug=True)
