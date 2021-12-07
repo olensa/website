@@ -41,8 +41,8 @@ input:focus{
     grid-column-gap: 25px;
     grid-template-rows: minmax(140px, 1fr);
     text-align: center;
-    padding-left: 10%;
     margin-block-end: 0%;
+    justify-items: center;
 }
 #text {
     display: grid;

@@ -5,17 +5,21 @@
 
         <meta charset ="UTF-8">
         <meta name="description" content="Contact Me Form">
-        <title>Contact Me</title>
+        <title>My Projects</title>
     </head>
     <body class="visitka">
+        
     {% extends "template.html" %}
     {% block content %}
-
+    <div class="projects">
     {% for row in rows %}
-        <a href ="https://{{row['Link']}}">{{row['Link']}}</a>
+        <div class = 'project'>
+                <a class="project_link" href ="https://{{row['Link']}}">{{row['Link']}}</a>
+        </div>
+
     {% endfor %}
-      
-      <a href = "/">Go back to home page</a>
+    </div>
+
 {% endblock %}
     
 </body>
